@@ -7,6 +7,6 @@ workflows:
     scripts:
       - name: Build Android APK
         script: |
-          gradle assembleDebug --warning-mode all
+          gradle assembleDebug --no-daemon
     artifacts:
       - Albasit_Plus_Native_AndroidIDE/app/build/outputs/**/*.apk
