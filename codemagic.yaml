@@ -1,0 +1,16 @@
+workflows:
+  android-workflow:
+    name: Android Build
+    max_build_duration: 30
+    instance_type: mac_mini_m1
+    scripts:
+      - name: Set up project
+        script: |
+          cd Albasit_Plus_Native_AndroidIDE
+          chmod +x gradlew
+      - name: Build Android APK
+        script: |
+          cd Albasit_Plus_Native_AndroidIDE
+          ./gradlew assembleDebug
+    artifacts:
+      - Albasit_Plus_Native_AndroidIDE/app/build/outputs/**/*.apk
