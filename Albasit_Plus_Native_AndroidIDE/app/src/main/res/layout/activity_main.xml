@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6F9"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Banner Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1A237E"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Albasit Plus"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Mobile Repairing, Govt Services & VIP Support"
+                android:textColor="#C5CAE9"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- VIP Toggle Simulation Button -->
+        <Button
+            android:id="@+id/btnVipToggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FFB300"
+            android:text="VIP Status: INACTIVE (Tap to Simulate VIP)"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="SERVICES MENU"
+            android:textColor="#757575"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!-- Service Buttons -->
+        <Button
+            android:id="@+id/btnLearner"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#2196F3"
+            android:text="Driving Learner License" />
+
+        <Button
+            android:id="@+id/btnCv"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#009688"
+            android:text="CV / Resume Making" />
+
+        <Button
+            android:id="@+id/btnBills"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#FF9800"
+            android:text="Utility Bills & University Fees" />
+
+        <Button
+            android:id="@+id/btnRepair"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#F44336"
+            android:text="Mobile Repairing & Flashing" />
+
+        <!-- VIP Services -->
+        <Button
+            android:id="@+id/btnEasyPaisa"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#43A047"
+            android:text="Emergency EasyPaisa (VIP Credit)" />
+
+        <Button
+            android:id="@+id/btnEasyLoad"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#00897B"
+            android:text="Emergency EasyLoad (VIP Credit)" />
+
+    </LinearLayout>
+</ScrollView>
